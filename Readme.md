@@ -26,6 +26,11 @@ theirs as well--which you might well have gotten wrong, and now they can tell yo
 You can copy and past the post url to defla.me/deflame.php?url=[insert url], 
 but the user experience is inferior.
 
+### FAQs:
+
+* **Why is it by author, not comment?** Because people tend to understand discussions
+in that way. If you only want to tell people what you believe yourself, just tell them.
+
 ### Known issues:
 
 Many. The web is a nonstandard nightmare, and recognizing what is and isn't a comment is
