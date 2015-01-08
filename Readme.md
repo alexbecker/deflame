@@ -46,6 +46,6 @@ Icons are courtesy of [www.flatpack.com](http://www.flatpack.com) and available 
 [CC-BY-SA 3.0](http://creativecommons.org/licenses/by/3.0/);
 both have been resized by me but are otherwise unaltered.
 
-* handshake.png is by [Icons8](http://www.icons8.com).
+* handshake.png and handshake_large.png by [Icons8](http://www.icons8.com).
 
 * next.png is by [Freepik](http://www.freepik.com).

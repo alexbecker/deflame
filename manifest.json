@@ -20,5 +20,9 @@
 	"page_action": {
 		"default_icon": "handshake.png",
 		"default_title": "Deflame"
+	},
+
+	"icons": {
+		"128": "handshake_large.png"
 	}
 }
