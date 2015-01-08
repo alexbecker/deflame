@@ -12,7 +12,7 @@ When a supported site is detected, the Deflame icon will appear in the address b
 Click to get agree/disagree/ignore on each comment, which indicate how you feel about
 the *author* of the comment. Click again to remove all "ignored" comments and add
 a table of who you (dis)agree with at the top of the page. This comes with a short link
-to a version hosted at _defla.me_ so you can show other commenters how you see the conversation.
+to a version hosted at defla.me so you can show other commenters how you see the conversation.
 
 ### Why:
 
@@ -23,7 +23,7 @@ theirs as well--which you might well have gotten wrong, and now they can tell yo
 
 ### Non-Chrome Alternatives:
 
-You can copy and past the post url to _defla.me/deflame.php?url=[insert url]_, 
+You can copy and past the post url to defla.me/deflame.php?url=[insert url], 
 but the user experience is inferior.
 
 ### Known issues:
@@ -37,7 +37,7 @@ rather than the websites themselves.
 
 ### Credits:
 
-Icons are courtesy of _www.flatpack.com_ and available under 
+Icons are courtesy of [www.flatpack.com](http://www.flatpack.com) and available under 
 [CC-BY-SA 3.0](http://creativecommons.org/licenses/by/3.0/);
 both have been resized by me but are otherwise unaltered.
 
