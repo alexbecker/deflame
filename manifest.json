@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "Deflame",
+	"version": "1.2",
+
+	"description": "Fight flaming on WordPress blogs.",
+	"homepage_url": "http://defla.me/",
+
+	"permissions": [
+		"tabs",
+		"declarativeContent",
+		"<all_urls>"
+	],
+
+	"background": {
+		"page": "background.html",
+		"persistant": false
+	},
+
+	"page_action": {
+		"default_icon": "handshake.png",
+		"default_title": "Deflame"
+	}
+}
