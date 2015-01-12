@@ -1,10 +1,12 @@
 {
 	"manifest_version": 2,
 	"name": "Deflame",
-	"version": "1.2",
+	"version": "0.1",
 
 	"description": "Fight flaming on WordPress blogs.",
 	"homepage_url": "http://defla.me/",
+
+	"short_name": "Deflame",
 
 	"permissions": [
 		"tabs",
