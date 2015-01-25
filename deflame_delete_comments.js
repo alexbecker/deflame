@@ -127,6 +127,10 @@ function deleteComments(good_authors) {
 		commentList.removeChild(commentList.firstChild);
 	}
 
+	// avoid double-adds
+	var added = new WeakMap();
+
+outer:
 	for (var i=0; i<authorNodes.snapshotLength; i++) {
 		var authorNode = authorNodes.snapshotItem(i);
 		var author = authorNode.textContent.replace("Pingback:","").replace(/'/g,"").trim();
@@ -135,9 +139,15 @@ function deleteComments(good_authors) {
 			// get outermost comment element
 			while (authorNode.parentNode) {
 				authorNode = authorNode.parentNode;
+
+				// avoid double-adds
+				if (added.get(authorNode)) {
+					continue outer;
+				}
 			}
 
 			// add back comment element
+			added.set(authorNode, true);
 			commentList.appendChild(authorNode);
 		}
 	}

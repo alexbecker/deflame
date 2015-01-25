@@ -3,8 +3,32 @@ function deflame() {
 	var authorNodes = document.evaluate("//cite|//*[@class='fn']|//*[@class='comment_author']|//*[@class='comment-author']//span[@itemprop='name']", document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
 	var authors = [];
 
+	// avoid adding forms forms twice for same comment
+	var added = new WeakMap();
+
 	for (var i=0; i<authorNodes.snapshotLength; i++) {
 		var authorNode = authorNodes.snapshotItem(i);
+
+		// get innermost comment node
+descent:
+		while (authorNode.hasChildNodes()) {
+			var children = authorNode.children;
+			for (var j=0; j<children.length; j++) {
+				for (var k=0; k<authorNodes.snapshotLength; k++) {
+					if (children[j].isEqualNode(authorNodes.snapshotItem(k))) {
+						authorNode = children[j];
+						continue descent;
+					}
+				}
+			}
+			break;
+		}
+
+		// avoid adding form twice
+		if (added.get(authorNode)) {
+			continue;
+		}
+		added.set(authorNode, true);
 
 		var author = authorNode.textContent.replace("Pingback:", "").replace(/'/g,"").trim();
 		authors[authors.length] = author;
@@ -50,7 +74,8 @@ function deflame() {
 		ignoreButtonLabel.appendChild(ignoreButton);
 		radioButtons.appendChild(ignoreButtonLabel);
 
-		authorNode.parentNode.appendChild(radioButtons);
+		// add form just after authorNode
+		authorNode.parentNode.insertBefore(radioButtons, authorNode.nextSibling);
 	}
 }
 
@@ -67,8 +92,9 @@ function checkAll(evt) {
 	}
 }
 
-try {
+//try {
 	deflame();
-} catch (e) {
+//}
+/* catch (e) {
 	alert("Oops! This website isn't supported. Contact me at acbecker@uchicago.edu if you want support added.");
-}
+}*/
