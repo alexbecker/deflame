@@ -92,9 +92,8 @@ function checkAll(evt) {
 	}
 }
 
-//try {
+try {
 	deflame();
-//}
-/* catch (e) {
+} catch (e) {
 	alert("Oops! This website isn't supported. Contact me at acbecker@uchicago.edu if you want support added.");
-}*/
+}
