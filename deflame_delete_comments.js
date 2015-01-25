@@ -103,7 +103,7 @@ function deleteComments(good_authors) {
 	header.setAttribute("id", "deflame_frame");
 	header.setAttribute("style", "position: relative; top: 0px; z-index: 1000");
 	header.setAttribute("width", "100%");
-	header.setAttribute("height", 125 + 35 * Math.max(agree.length, disagree.length));
+	header.setAttribute("height", 140 + 35 * Math.max(agree.length, disagree.length));
 	header.setAttribute("frameborder", "0");
 	header.setAttribute("scrolling", "yes");
 	header.setAttribute("src", headerSrc);

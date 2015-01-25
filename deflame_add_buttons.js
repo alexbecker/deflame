@@ -3,7 +3,7 @@ function deflame() {
 	var authorNodes = document.evaluate("//cite|//*[@class='fn']|//*[@class='comment_author']|//*[@class='comment-author']//span[@itemprop='name']", document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
 	var authors = [];
 
-	// avoid adding forms forms twice for same comment
+	// avoid adding forms twice for same comment
 	var added = new WeakMap();
 
 	for (var i=0; i<authorNodes.snapshotLength; i++) {
