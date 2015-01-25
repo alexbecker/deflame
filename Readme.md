@@ -40,6 +40,8 @@ because the format of comments is inconsistent. Some sites for which the icon ap
 probably unsupported. This is probably unfixable, but it's due to how Chrome extensions work
 rather than the websites themselves.
 
+A list of known supported/unsupported files is given in supported.md.
+
 ### Credits:
 
 Icons are courtesy of [www.flatpack.com](http://www.flatpack.com) and available under 
