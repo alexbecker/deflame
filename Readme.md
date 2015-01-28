@@ -31,6 +31,9 @@ but the user experience is inferior.
 * **Why is it by author, not comment?** Because people tend to understand discussions
 in that way. If you only want to tell people what you believe yourself, just tell them.
 
+* **Why am I getting HTTPS warnings?** Because I haven't bought an HTTPS certificate.
+You can still use [the webapp](defla.me/webapp.html).
+
 ### Known issues:
 
 Many. The web is a nonstandard nightmare, and recognizing what is and isn't a comment is
@@ -39,6 +42,9 @@ but it will never be perfect. The placement of buttons is also variable and some
 because the format of comments is inconsistent. Some sites for which the icon appears are
 probably unsupported. This is probably unfixable, but it's due to how Chrome extensions work
 rather than the websites themselves.
+
+Currently only HTTP is supported, so sites that use HTTPS can only be used through 
+[the webapp](defla.me/webapp.html). This may change once HTTPS certs become free later this year.
 
 A list of known supported/unsupported files is given in supported.md.
 
