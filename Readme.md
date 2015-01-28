@@ -48,6 +48,11 @@ Currently only HTTP is supported, so sites that use HTTPS can only be used throu
 
 A list of known supported/unsupported files is given in supported.md.
 
+### Licensing:
+
+All code and documentation in this repository is licensed under the Apache 2.0 License, located in
+License.txt. The images are not mine, and their licenses can be found below.
+
 ### Credits:
 
 Icons are courtesy of [www.flatpack.com](http://www.flatpack.com) and available under 
